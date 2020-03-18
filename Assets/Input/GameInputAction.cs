@@ -1,4 +1,4 @@
-// GENERATED AUTOMATICALLY FROM 'Assets/Controls.inputactions'
+// GENERATED AUTOMATICALLY FROM 'Assets/Input/GameInputAction.inputactions'
 
 using System;
 using System.Collections;
@@ -6,170 +6,47 @@ using System.Collections.Generic;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Utilities;
 
-public class @Controls : IInputActionCollection, IDisposable
+public class @GameInputAction : IInputActionCollection, IDisposable
 {
     public InputActionAsset asset { get; }
-    public @Controls()
+    public @GameInputAction()
     {
         asset = InputActionAsset.FromJson(@"{
-    ""name"": ""Controls"",
+    ""name"": ""GameInputAction"",
     ""maps"": [
         {
             ""name"": ""Camera"",
-            ""id"": ""a2a87dab-7ce5-4639-9987-709ce2805657"",
+            ""id"": ""5fc07168-3d4c-44f5-8e73-0bbad12ea117"",
             ""actions"": [
                 {
                     ""name"": ""Move"",
-                    ""type"": ""PassThrough"",
-                    ""id"": ""234becb4-3c22-4eef-955e-dbe081562b40"",
+                    ""type"": ""Value"",
+                    ""id"": ""a691a575-ec58-4c94-ac1d-281efd2ca51d"",
                     ""expectedControlType"": ""Vector2"",
-                    ""processors"": """",
-                    ""interactions"": """"
-                },
-                {
-                    ""name"": ""PanMove"",
-                    ""type"": ""Button"",
-                    ""id"": ""764bb63b-d671-41c1-b164-17eaf0aeba38"",
-                    ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
                 },
                 {
                     ""name"": ""Rotate"",
                     ""type"": ""Value"",
-                    ""id"": ""8ab4787a-67c4-4214-9f89-be86af679be2"",
+                    ""id"": ""65ef19c6-555d-42c6-a029-70c9175e40b0"",
                     ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """"
                 },
                 {
-                    ""name"": ""MouseRotation"",
-                    ""type"": ""Button"",
-                    ""id"": ""fad32424-fb41-468e-861e-24ba51f822c6"",
-                    ""expectedControlType"": """",
-                    ""processors"": """",
-                    ""interactions"": """"
-                },
-                {
                     ""name"": ""Zoom"",
-                    ""type"": ""PassThrough"",
-                    ""id"": ""a7823612-249b-4ada-944e-17be14507fa8"",
+                    ""type"": ""Value"",
+                    ""id"": ""9cba2011-4c31-4651-b31c-31e4df24a93c"",
                     ""expectedControlType"": ""Axis"",
-                    ""processors"": """",
-                    ""interactions"": """"
-                },
-                {
-                    ""name"": ""Test"",
-                    ""type"": ""Button"",
-                    ""id"": ""3c491d9b-6f55-46be-be5a-7073f8c6ac15"",
-                    ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """"
                 }
             ],
             ""bindings"": [
                 {
-                    ""name"": """",
-                    ""id"": ""85059c20-dd99-443c-a168-6c7a1af83000"",
-                    ""path"": ""<Mouse>/middleButton"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Mouse"",
-                    ""action"": ""PanMove"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""ee0a41f3-3a11-478d-84b2-e3ee45da33c1"",
-                    ""path"": ""<Mouse>/rightButton"",
-                    ""interactions"": ""Hold"",
-                    ""processors"": """",
-                    ""groups"": ""Mouse"",
-                    ""action"": ""MouseRotation"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": ""Button With One Modifier"",
-                    ""id"": ""675fb972-c726-4414-ae05-9a8053e0f873"",
-                    ""path"": ""ButtonWithOneModifier"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""MouseRotation"",
-                    ""isComposite"": true,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": ""modifier"",
-                    ""id"": ""0c6a1bc3-71b6-4fe5-b776-bb87f06f038d"",
-                    ""path"": ""<Keyboard>/shift"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""MouseRotation"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""button"",
-                    ""id"": ""156e04b9-886d-40b6-bb5a-34cf337b9083"",
-                    ""path"": ""<Keyboard>/f"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""MouseRotation"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""fbd9bff3-c7da-45da-9ec4-1f460fa9462d"",
-                    ""path"": ""<Mouse>/scroll/y"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Mouse"",
-                    ""action"": ""Zoom"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": ""1D Axis"",
-                    ""id"": ""0fa4762a-b02f-46c2-89d1-cd90e45b094f"",
-                    ""path"": ""1DAxis"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Zoom"",
-                    ""isComposite"": true,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": ""Negative"",
-                    ""id"": ""809f535c-c52d-47a1-a351-6def55a28c7b"",
-                    ""path"": ""<Keyboard>/minus"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Keyboard"",
-                    ""action"": ""Zoom"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""Positive"",
-                    ""id"": ""36f74a18-7955-4056-8a79-103d2e811a99"",
-                    ""path"": ""<Keyboard>/equals"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Keyboard"",
-                    ""action"": ""Zoom"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""2D Vector"",
-                    ""id"": ""ba085586-a912-4df8-9467-4771ecb409db"",
+                    ""name"": ""WASD"",
+                    ""id"": ""a5ada3e4-2cf9-4ba6-ab82-e74264ce485a"",
                     ""path"": ""2DVector"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -180,54 +57,109 @@ public class @Controls : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": ""up"",
-                    ""id"": ""92e2b638-e9e8-4362-bb7c-bfd51f9de1ef"",
+                    ""id"": ""f4b0ed1a-515a-48f9-a90a-81341f4389c7"",
                     ""path"": ""<Keyboard>/w"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": """",
                     ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
                 {
                     ""name"": ""down"",
-                    ""id"": ""92b62fe8-60e9-4677-a7f5-ad100153ad95"",
+                    ""id"": ""182c052d-b8b8-492c-ac96-a6845d97e898"",
                     ""path"": ""<Keyboard>/s"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": """",
                     ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
                 {
                     ""name"": ""left"",
-                    ""id"": ""2e96cb30-4ddf-4c41-91bd-de958053c0bd"",
+                    ""id"": ""8095adb8-1c6a-4981-8f7c-9fed1b51eb1b"",
                     ""path"": ""<Keyboard>/a"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": """",
                     ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
                 {
                     ""name"": ""right"",
-                    ""id"": ""0cd5f72b-7f41-4e1f-92e7-d6d8a2ea188b"",
+                    ""id"": ""2125d182-64c0-4a05-95e6-0417855781fa"",
                     ""path"": ""<Keyboard>/d"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": """",
                     ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
                 {
-                    ""name"": ""2D Vector"",
-                    ""id"": ""2fccfacf-a451-43ad-95ed-32702aeeed05"",
+                    ""name"": ""Arrow Keys"",
+                    ""id"": ""20d2420b-33c2-4acb-ab2b-a2c9fd655ef3"",
                     ""path"": ""2DVector"",
                     ""interactions"": """",
                     ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""50482d60-095d-486e-ba9c-ba48992b801a"",
+                    ""path"": ""<Keyboard>/upArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""e2ed7e83-4cee-4c51-aa1a-6c8df91abba9"",
+                    ""path"": ""<Keyboard>/downArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""c2cedc63-ee08-4021-9149-0dd3937d316c"",
+                    ""path"": ""<Keyboard>/leftArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""b8926b26-1e1f-4458-bf69-5b8869c96b7b"",
+                    ""path"": ""<Keyboard>/rightArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""Keyboard"",
+                    ""id"": ""3a7df0f2-2a3b-49c4-853e-6120013a2f83"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": ""ScaleVector2(x=10,y=10)"",
                     ""groups"": """",
                     ""action"": ""Rotate"",
                     ""isComposite"": true,
@@ -235,117 +167,135 @@ public class @Controls : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": ""up"",
-                    ""id"": ""e9972680-83d8-4e06-bff8-96cf5ff02940"",
+                    ""id"": ""62bb43f7-67fc-4aa3-8825-3942fc648ca3"",
                     ""path"": ""<Keyboard>/pageUp"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": """",
                     ""action"": ""Rotate"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
                 {
                     ""name"": ""down"",
-                    ""id"": ""5563c1de-c2f1-4929-b46b-a0cd663fd03d"",
+                    ""id"": ""48ff0d2e-d205-4fef-a6ff-913493b6a06c"",
                     ""path"": ""<Keyboard>/pageDown"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": """",
                     ""action"": ""Rotate"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
                 {
                     ""name"": ""left"",
-                    ""id"": ""bb403d6d-4486-4da6-aaa2-919c7a92c572"",
+                    ""id"": ""66fc2af8-8e01-43ac-bcdf-973c248fd7f8"",
                     ""path"": ""<Keyboard>/q"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": """",
                     ""action"": ""Rotate"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
                 {
                     ""name"": ""right"",
-                    ""id"": ""c6411f1c-1ed3-43cc-8578-6bd36ae19f5b"",
+                    ""id"": ""bebdc0c8-8022-4714-86b0-de932584b2e6"",
                     ""path"": ""<Keyboard>/e"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": """",
                     ""action"": ""Rotate"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
                 {
-                    ""name"": ""Button With One Modifier"",
-                    ""id"": ""d5c1d828-e5b7-4abd-925a-b5f8f38c78fe"",
-                    ""path"": ""ButtonWithOneModifier"",
+                    ""name"": ""Mouse"",
+                    ""id"": ""11e5dd99-245c-4636-8719-bacde0fdcbc9"",
+                    ""path"": ""2DVectorWithModifier"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Test"",
+                    ""action"": ""Rotate"",
                     ""isComposite"": true,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": ""modifier"",
-                    ""id"": ""5ff5b2d1-6898-43a4-a6ea-35b33c9a76f6"",
-                    ""path"": ""<Keyboard>/shift"",
+                    ""id"": ""59a98c59-aae6-4ef5-b4f3-f18cf323000b"",
+                    ""path"": ""<Mouse>/rightButton"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Test"",
+                    ""action"": ""Rotate"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
                 {
-                    ""name"": ""button"",
-                    ""id"": ""08f7eb9b-a714-486d-9806-eb8985a54c00"",
-                    ""path"": ""<Keyboard>/c"",
+                    ""name"": ""vector2"",
+                    ""id"": ""b653b8e3-26f2-412e-a6e1-4fc9a9228ca9"",
+                    ""path"": ""<Mouse>/delta"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Test"",
+                    ""action"": ""Rotate"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""1D Axis"",
+                    ""id"": ""8bc3339f-648d-4442-9de1-fdb8edb017fb"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": ""Scale(factor=10)"",
+                    ""groups"": """",
+                    ""action"": ""Zoom"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""df32bbdc-d291-4586-bd65-afb35293b7b3"",
+                    ""path"": ""<Keyboard>/minus"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Zoom"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""0e7b8603-44ba-4626-8a7f-947ea043abac"",
+                    ""path"": ""<Keyboard>/equals"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Zoom"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ace071c8-45fa-4d63-bcc9-fa65678d9b61"",
+                    ""path"": ""<Mouse>/scroll/y"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Zoom"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
     ],
-    ""controlSchemes"": [
-        {
-            ""name"": ""Mouse"",
-            ""bindingGroup"": ""Mouse"",
-            ""devices"": [
-                {
-                    ""devicePath"": ""<Mouse>"",
-                    ""isOptional"": false,
-                    ""isOR"": false
-                }
-            ]
-        },
-        {
-            ""name"": ""Keyboard"",
-            ""bindingGroup"": ""Keyboard"",
-            ""devices"": [
-                {
-                    ""devicePath"": ""<Keyboard>"",
-                    ""isOptional"": false,
-                    ""isOR"": false
-                }
-            ]
-        }
-    ]
+    ""controlSchemes"": []
 }");
         // Camera
         m_Camera = asset.FindActionMap("Camera", throwIfNotFound: true);
         m_Camera_Move = m_Camera.FindAction("Move", throwIfNotFound: true);
-        m_Camera_PanMove = m_Camera.FindAction("PanMove", throwIfNotFound: true);
         m_Camera_Rotate = m_Camera.FindAction("Rotate", throwIfNotFound: true);
-        m_Camera_MouseRotation = m_Camera.FindAction("MouseRotation", throwIfNotFound: true);
         m_Camera_Zoom = m_Camera.FindAction("Zoom", throwIfNotFound: true);
-        m_Camera_Test = m_Camera.FindAction("Test", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -396,21 +346,15 @@ public class @Controls : IInputActionCollection, IDisposable
     private readonly InputActionMap m_Camera;
     private ICameraActions m_CameraActionsCallbackInterface;
     private readonly InputAction m_Camera_Move;
-    private readonly InputAction m_Camera_PanMove;
     private readonly InputAction m_Camera_Rotate;
-    private readonly InputAction m_Camera_MouseRotation;
     private readonly InputAction m_Camera_Zoom;
-    private readonly InputAction m_Camera_Test;
     public struct CameraActions
     {
-        private @Controls m_Wrapper;
-        public CameraActions(@Controls wrapper) { m_Wrapper = wrapper; }
+        private @GameInputAction m_Wrapper;
+        public CameraActions(@GameInputAction wrapper) { m_Wrapper = wrapper; }
         public InputAction @Move => m_Wrapper.m_Camera_Move;
-        public InputAction @PanMove => m_Wrapper.m_Camera_PanMove;
         public InputAction @Rotate => m_Wrapper.m_Camera_Rotate;
-        public InputAction @MouseRotation => m_Wrapper.m_Camera_MouseRotation;
         public InputAction @Zoom => m_Wrapper.m_Camera_Zoom;
-        public InputAction @Test => m_Wrapper.m_Camera_Test;
         public InputActionMap Get() { return m_Wrapper.m_Camera; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -423,21 +367,12 @@ public class @Controls : IInputActionCollection, IDisposable
                 @Move.started -= m_Wrapper.m_CameraActionsCallbackInterface.OnMove;
                 @Move.performed -= m_Wrapper.m_CameraActionsCallbackInterface.OnMove;
                 @Move.canceled -= m_Wrapper.m_CameraActionsCallbackInterface.OnMove;
-                @PanMove.started -= m_Wrapper.m_CameraActionsCallbackInterface.OnPanMove;
-                @PanMove.performed -= m_Wrapper.m_CameraActionsCallbackInterface.OnPanMove;
-                @PanMove.canceled -= m_Wrapper.m_CameraActionsCallbackInterface.OnPanMove;
                 @Rotate.started -= m_Wrapper.m_CameraActionsCallbackInterface.OnRotate;
                 @Rotate.performed -= m_Wrapper.m_CameraActionsCallbackInterface.OnRotate;
                 @Rotate.canceled -= m_Wrapper.m_CameraActionsCallbackInterface.OnRotate;
-                @MouseRotation.started -= m_Wrapper.m_CameraActionsCallbackInterface.OnMouseRotation;
-                @MouseRotation.performed -= m_Wrapper.m_CameraActionsCallbackInterface.OnMouseRotation;
-                @MouseRotation.canceled -= m_Wrapper.m_CameraActionsCallbackInterface.OnMouseRotation;
                 @Zoom.started -= m_Wrapper.m_CameraActionsCallbackInterface.OnZoom;
                 @Zoom.performed -= m_Wrapper.m_CameraActionsCallbackInterface.OnZoom;
                 @Zoom.canceled -= m_Wrapper.m_CameraActionsCallbackInterface.OnZoom;
-                @Test.started -= m_Wrapper.m_CameraActionsCallbackInterface.OnTest;
-                @Test.performed -= m_Wrapper.m_CameraActionsCallbackInterface.OnTest;
-                @Test.canceled -= m_Wrapper.m_CameraActionsCallbackInterface.OnTest;
             }
             m_Wrapper.m_CameraActionsCallbackInterface = instance;
             if (instance != null)
@@ -445,50 +380,20 @@ public class @Controls : IInputActionCollection, IDisposable
                 @Move.started += instance.OnMove;
                 @Move.performed += instance.OnMove;
                 @Move.canceled += instance.OnMove;
-                @PanMove.started += instance.OnPanMove;
-                @PanMove.performed += instance.OnPanMove;
-                @PanMove.canceled += instance.OnPanMove;
                 @Rotate.started += instance.OnRotate;
                 @Rotate.performed += instance.OnRotate;
                 @Rotate.canceled += instance.OnRotate;
-                @MouseRotation.started += instance.OnMouseRotation;
-                @MouseRotation.performed += instance.OnMouseRotation;
-                @MouseRotation.canceled += instance.OnMouseRotation;
                 @Zoom.started += instance.OnZoom;
                 @Zoom.performed += instance.OnZoom;
                 @Zoom.canceled += instance.OnZoom;
-                @Test.started += instance.OnTest;
-                @Test.performed += instance.OnTest;
-                @Test.canceled += instance.OnTest;
             }
         }
     }
     public CameraActions @Camera => new CameraActions(this);
-    private int m_MouseSchemeIndex = -1;
-    public InputControlScheme MouseScheme
-    {
-        get
-        {
-            if (m_MouseSchemeIndex == -1) m_MouseSchemeIndex = asset.FindControlSchemeIndex("Mouse");
-            return asset.controlSchemes[m_MouseSchemeIndex];
-        }
-    }
-    private int m_KeyboardSchemeIndex = -1;
-    public InputControlScheme KeyboardScheme
-    {
-        get
-        {
-            if (m_KeyboardSchemeIndex == -1) m_KeyboardSchemeIndex = asset.FindControlSchemeIndex("Keyboard");
-            return asset.controlSchemes[m_KeyboardSchemeIndex];
-        }
-    }
     public interface ICameraActions
     {
         void OnMove(InputAction.CallbackContext context);
-        void OnPanMove(InputAction.CallbackContext context);
         void OnRotate(InputAction.CallbackContext context);
-        void OnMouseRotation(InputAction.CallbackContext context);
         void OnZoom(InputAction.CallbackContext context);
-        void OnTest(InputAction.CallbackContext context);
     }
 }
